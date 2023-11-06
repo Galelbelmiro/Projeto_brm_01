@@ -26,3 +26,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // ROTA PARA ADICIONAR PEDIDOS
 Route::post('add_pedido',[PedidosController::class,'adicionar']);
+
+// ROTA RESPONSÁVEL POR EDITAR OS REGISTROS
+Route::put('edit_pedido',[PedidosController::class,'editar']);
+
+// ROTA RESPONSÁVEL POR DELETAR OS REGISTROS
+Route::delete('delete_pedido', [PedidosController::class,'deletar']);
+
+
+Route::get('getdata', [PedidosController::class,'getdata']);
