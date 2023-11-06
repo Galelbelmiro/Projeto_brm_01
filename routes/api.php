@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// TESTE DE ROTA
+Route::get('testando', function(){
+    return "Esse é um teste de Rota";
+});
