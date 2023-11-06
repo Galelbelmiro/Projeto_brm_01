@@ -15,6 +15,9 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
+            $table->string('nome');
+            $table->double('valor_frete');
+            $table->date('data_entrega');
             $table->timestamps();
         });
     }
